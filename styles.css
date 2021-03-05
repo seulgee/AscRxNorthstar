@@ -1,0 +1,84 @@
+html {
+    background-color: #F9F9F9;
+}
+
+/*////////////////////////////// NAV ITEMS */
+
+#header {
+    position: fixed;
+    top: 0px;
+    z-index: 30;
+}
+
+#bottom {
+    position: fixed;
+    bottom: 0px;
+}
+
+#bottom-nav {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    padding: 13px 24px 0px 24px;
+    float: center;
+    background-color: #ffffff;
+    border-top: 1px solid #d6d6d6;
+}
+
+.nav-item {
+    width: 81px;
+    margin: auto;
+    color: #0F3C97;
+    text-align: center;
+    float: left;
+}
+
+.nav-icon {
+    margin-bottom: 6px;
+}
+
+#active {
+    color: #0F3C97;
+}
+
+.nav-item p{
+    text-align: center;
+    font-family: 'Whitney';
+    font-weight: 600;
+    font-size: 14pt;
+    line-height: 16pt;
+    letter-spacing: 1.25px;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #1E69D2;
+}
+
+.selected-bar {
+    width: 81px;
+    height: 2px;
+    background-color: #0F3C97;
+}
+
+
+/*////////////////////////////// HOT SPOT */
+
+.hotspot {
+    background-color: red;
+    opacity: 0;
+}
+
+#hotspot-injectox {
+    width: 327px;
+    height: 48px;
+    position: absolute;
+    top: 221px;
+    left: 24px;
+}
+
+#hotspot-guide {
+    width: 327px;
+    height: 48px;
+    position: absolute;
+    top: 361px;
+    left: 24px;
+}
