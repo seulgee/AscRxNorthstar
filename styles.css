@@ -1,3 +1,7 @@
+
+@font-face { font-family: Whitney; src: url('fonts/HCo_Whitney_Pro/OpenType/Whitney-Semibld-Pro.otf'); }
+
+
 html {
     background-color: #F9F9F9;
 }
@@ -43,8 +47,8 @@ html {
 
 .nav-item p{
     text-align: center;
-    font-family: 'Whitney';
-    font-weight: 600;
+    font-family: 'Whitney', sans-serif;
+    /* font-weight: 600; */
     font-size: 14pt;
     line-height: 16pt;
     letter-spacing: 1.25px;
