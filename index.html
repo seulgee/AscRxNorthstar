@@ -7,10 +7,16 @@
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
     <img id="header" src="images/header.png" width="100%">
+    <a href="html/home/injectox-close.html">
+        <div id="dropdown-progress" class="dropdown">
+            <p></p>
+        </div>
+    </a>
     <a href="html/home/injectox-close.html">
         <div id="hotspot-injectox" class="hotspot"></div>
     </a>
@@ -45,20 +51,21 @@
         </a>
     </div>
     <img class="body" src="images/TEST/HOME/01 Home - Injectox Open-1.png" width="100%">
+
+    <script>
+        var backgroundImage = $(".body")
+        var hotspot = $(".hotspot")
+    
+        backgroundImage.click(function(){
+            hotspot.animate({
+                opacity: '.5'
+            }, "80")
+            hotspot.animate({
+                opacity: '0'
+            }, "80")
+        })
+    </script>
+
 </body>
-
-<!-- <script>
-    var backgroundImage = $("body")
-    var hotspot = $("hotspot")
-
-    backgroundImage.click(function(){
-        hotspot.animate({
-            opacity: '1'
-        }, "300")
-        hotspot.animate({
-            opacity: '0'
-        }, "300")
-    })
-</script> -->
 
 </html>

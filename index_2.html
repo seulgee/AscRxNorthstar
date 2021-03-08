@@ -45,20 +45,21 @@
         </a>
     </div>
     <img class="body" src="images/TEST/LEARN/13 Learn.png" width="100%">
+
+    <script>
+        var backgroundImage = $(".body")
+        var hotspot = $(".hotspot")
+    
+        backgroundImage.click(function(){
+            hotspot.animate({
+                opacity: '.5'
+            }, "80")
+            hotspot.animate({
+                opacity: '0'
+            }, "80")
+        })
+    </script>
+
 </body>
-
-<script>
-    var backgroundImage = $("body")
-    var hotspot = $("hotspot")
-
-    backgroundImage.click(function(){
-        hotspot.animate({
-            opacity: '1'
-        }, "300")
-        hotspot.animate({
-            opacity: '0'
-        }, "300")
-    })
-</script>
 
 </html>

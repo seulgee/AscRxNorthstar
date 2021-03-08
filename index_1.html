@@ -11,8 +11,8 @@
 
 <body>
     <img id="header" src="images/header-rx.png" width="100%">
-    <a href="html/home/injectox-close.html">
-        <div id="hotspot-injectox" class="hotspot"></div>
+    <a href="html/rx/details.html">
+        <div id="hotspot-detail" class="hotspot"></div>
     </a>
     <div id="bottom-nav">
         <a href="index.html">
@@ -45,20 +45,23 @@
         </a>
     </div>
     <img class="body" src="images/TEST/RX/01 Rx.png" width="100%">
+
+    <script>
+        var backgroundImage = $(".body")
+        var hotspot = $(".hotspot")
+    
+        backgroundImage.click(function(){
+            hotspot.animate({
+                opacity: '.5'
+            }, "80")
+            hotspot.animate({
+                opacity: '0'
+            }, "80")
+        })
+    </script>
+
 </body>
 
-<script>
-    var backgroundImage = $("body")
-    var hotspot = $("hotspot")
-
-    backgroundImage.click(function(){
-        hotspot.animate({
-            opacity: '1'
-        }, "300")
-        hotspot.animate({
-            opacity: '0'
-        }, "300")
-    })
 </script>
 
 </html>
